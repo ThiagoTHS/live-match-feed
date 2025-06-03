@@ -1,0 +1,167 @@
+{
+  "match": {
+    "id": 12345,
+    "date": "2024-10-26T20:00:00Z",
+    "stadium": "Maracanã",
+    "teamA": "Flamengo",
+    "teamB": "Juventude",
+    "score": {
+      "teamA": 2,
+      "teamB": 1
+    }
+  },
+  "events": [
+    {
+      "id": "e1",
+      "minute": 5,
+      "type": "kickoff",
+      "description": "Começa o jogo no Maracanã!",
+      "team": "",
+      "player": ""
+    },
+    {
+      "id": "e2",
+      "minute": 12,
+      "type": "goal",
+      "description": "Gol do Flamengo! Bruno Henrique abre o placar.",
+      "team": "Flamengo",
+      "player": "Bruno Henrique"
+    },
+    {
+      "id": "e3",
+      "minute": 20,
+      "type": "yellow_card",
+      "description": "Cartão amarelo para Rodrigo Caio por falta dura.",
+      "team": "Flamengo",
+      "player": "Rodrigo Caio"
+    },
+    {
+      "id": "e4",
+      "minute": 34,
+      "type": "goal",
+      "description": "Gol do Juventude! Vitor Gabriel empata o jogo.",
+      "team": "Juventude",
+      "player": "Vitor Gabriel"
+    },
+    {
+      "id": "e5",
+      "minute": 45,
+      "type": "halftime",
+      "description": "Fim do primeiro tempo.",
+      "team": "",
+      "player": ""
+    },
+    {
+      "id": "e6",
+      "minute": 46,
+      "type": "substitution",
+      "description": "Substituição no Flamengo: sai Everton Ribeiro, entra Arrascaeta.",
+      "team": "Flamengo",
+      "player": "Arrascaeta"
+    },
+    {
+      "id": "e7",
+      "minute": 60,
+      "type": "red_card",
+      "description": "Cartão vermelho para Danilo Boza do Juventude!",
+      "team": "Juventude",
+      "player": "Danilo Boza"
+    },
+    {
+      "id": "e8",
+      "minute": 74,
+      "type": "goal",
+      "description": "Gol do Flamengo! Gabigol coloca o time na frente novamente.",
+      "team": "Flamengo",
+      "player": "Gabigol"
+    },
+    {
+      "id": "e9",
+      "minute": 90,
+      "type": "fulltime",
+      "description": "Fim de jogo! Flamengo vence por 2 a 1.",
+      "team": "",
+      "player": ""
+    },
+    {
+      "id": "1",
+      "minute": 3,
+      "type": "foul",
+      "description": "Falta cometida por Everton Ribeiro",
+      "team": "Flamengo",
+      "player": "Everton Ribeiro"
+    },
+    {
+      "id": "2",
+      "minute": 9,
+      "type": "yellow_card",
+      "description": "Cartão amarelo para Zé Ivaldo",
+      "team": "Juventude",
+      "player": "Zé Ivaldo"
+    },
+    {
+      "id": "3",
+      "minute": 14,
+      "type": "goal",
+      "description": "Gol de Pedro após cruzamento",
+      "team": "Flamengo",
+      "player": "Pedro"
+    },
+    {
+      "id": "4",
+      "minute": 29,
+      "type": "substitution",
+      "description": "Sai Gerson, entra Allan",
+      "team": "Flamengo",
+      "player": "Allan"
+    },
+    {
+      "id": "5",
+      "minute": 45,
+      "type": "half_time",
+      "description": "Fim do primeiro tempo",
+      "team": "",
+      "player": ""
+    },
+    {
+      "id": "6",
+      "minute": 52,
+      "type": "goal",
+      "description": "Gol de Vitor Gabriel",
+      "team": "Juventude",
+      "player": "Vitor Gabriel"
+    },
+    {
+      "id": "7",
+      "minute": 60,
+      "type": "foul",
+      "description": "Falta cometida por Filipe Luís",
+      "team": "Flamengo",
+      "player": "Filipe Luís"
+    },
+    {
+      "id": "8",
+      "minute": 67,
+      "type": "red_card",
+      "description": "Cartão vermelho para Vitor Mendes",
+      "team": "Juventude",
+      "player": "Vitor Mendes"
+    },
+    {
+      "id": "9",
+      "minute": 75,
+      "type": "substitution",
+      "description": "Sai Arrascaeta, entra Victor Hugo",
+      "team": "Flamengo",
+      "player": "Victor Hugo"
+    },
+    {
+      "id": "10",
+      "minute": 90,
+      "type": "end",
+      "description": "Fim de jogo",
+      "team": "",
+      "player": ""
+    }
+  ]
+}

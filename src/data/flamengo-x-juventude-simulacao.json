@@ -1,0 +1,121 @@
+{
+  "partida": {
+    "id": 9999,
+    "data": "2024-10-26",
+    "hora": "18:30",
+    "estadio": "Maracanã",
+    "cidade": "Rio de Janeiro",
+    "estado": "RJ",
+    "campeonato": "Brasileirão Série A",
+    "rodada": 34,
+    "time_mandante": "Flamengo",
+    "time_visitante": "Juventude",
+    "placar": "3 x 1"
+  },
+  "eventos": [
+    {
+      "id": "1",
+      "minuto": 2,
+      "tipo": "Início do jogo",
+      "descricao": "A partida começou no Maracanã.",
+      "time": "",
+      "jogador": ""
+    },
+    {
+      "id": "2",
+      "minuto": 5,
+      "tipo": "Falta",
+      "descricao": "Falta cometida por Thiago Maia no meio-campo.",
+      "time": "Flamengo",
+      "jogador": "Thiago Maia"
+    },
+    {
+      "id": "3",
+      "minuto": 12,
+      "tipo": "Gol",
+      "descricao": "Gabigol finaliza com categoria no canto esquerdo!",
+      "time": "Flamengo",
+      "jogador": "Gabriel Barbosa"
+    },
+    {
+      "id": "4",
+      "minuto": 19,
+      "tipo": "Cartão Amarelo",
+      "descricao": "Cartão amarelo para Rodrigo Caio por reclamação.",
+      "time": "Flamengo",
+      "jogador": "Rodrigo Caio"
+    },
+    {
+      "id": "5",
+      "minuto": 30,
+      "tipo": "Gol",
+      "descricao": "Grande jogada de Capixaba pela esquerda e finalização de cabeça de Vitor Gabriel.",
+      "time": "Juventude",
+      "jogador": "Vitor Gabriel"
+    },
+    {
+      "id": "6",
+      "minuto": 41,
+      "tipo": "Cartão Vermelho",
+      "descricao": "Expulsão direta para Zé Ricardo após entrada violenta.",
+      "time": "Juventude",
+      "jogador": "Zé Ricardo"
+    },
+    {
+      "id": "7",
+      "minuto": 45,
+      "tipo": "Fim do 1º tempo",
+      "descricao": "Encerrado o primeiro tempo.",
+      "time": "",
+      "jogador": ""
+    },
+    {
+      "id": "8",
+      "minuto": 46,
+      "tipo": "Início do 2º tempo",
+      "descricao": "Bola rolando novamente no Maracanã.",
+      "time": "",
+      "jogador": ""
+    },
+    {
+      "id": "9",
+      "minuto": 55,
+      "tipo": "Substituição",
+      "descricao": "Sai Bruno Henrique, entra Everton Cebolinha.",
+      "time": "Flamengo",
+      "jogador": "Everton Cebolinha"
+    },
+    {
+      "id": "10",
+      "minuto": 61,
+      "tipo": "Gol",
+      "descricao": "Pedro marca de cabeça após escanteio cobrado por Arrascaeta.",
+      "time": "Flamengo",
+      "jogador": "Pedro"
+    },
+    {
+      "id": "11",
+      "minuto": 73,
+      "tipo": "Substituição",
+      "descricao": "Sai Vitor Gabriel, entra Oscar Ruiz.",
+      "time": "Juventude",
+      "jogador": "Oscar Ruiz"
+    },
+    {
+      "id": "12",
+      "minuto": 88,
+      "tipo": "Gol",
+      "descricao": "Arrascaeta faz um golaço de fora da área!",
+      "time": "Flamengo",
+      "jogador": "Arrascaeta"
+    },
+    {
+      "id": "13",
+      "minuto": 90,
+      "tipo": "Fim de jogo",
+      "descricao": "Fim de papo no Maracanã. Flamengo vence por 3 a 1.",
+      "time": "",
+      "jogador": ""
+    }
+  ]
+}

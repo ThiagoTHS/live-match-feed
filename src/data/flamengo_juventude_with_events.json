@@ -5458,12 +5458,36 @@
   },
   "events": [
     {
+      "id": "1",
+      "minute": 1,
+      "type": "foul",
+      "description": "Falta cometida por Everton Ribeiro",
+      "team": "Flamengo",
+      "player": "Everton Ribeiro"
+    },
+    {
       "id": "e001",
       "minute": 5,
       "type": "foul",
       "description": "Falta cometida por Pulgar no meio-campo",
       "team": "Flamengo",
       "player": "Erick Pulgar"
+    },
+    {
+      "id": "e1",
+      "minute": 5,
+      "type": "kickoff",
+      "description": "Começa o jogo no Maracanã!",
+      "team": "",
+      "player": ""
+    },
+    {
+      "id": "2",
+      "minute": 9,
+      "type": "yellow_card",
+      "description": "Cartão amarelo para Zé Ivaldo",
+      "team": "Juventude",
+      "player": "Zé Ivaldo"
     },
     {
       "id": "e002",
@@ -5474,6 +5498,22 @@
       "player": "Alan Ruschel"
     },
     {
+      "id": "e2",
+      "minute": 12,
+      "type": "goal",
+      "description": "Gol do Flamengo! Bruno Henrique abre o placar.",
+      "team": "Flamengo",
+      "player": "Bruno Henrique"
+    },
+    {
+      "id": "3",
+      "minute": 14,
+      "type": "goal",
+      "description": "Gol de Pedro após cruzamento",
+      "team": "Flamengo",
+      "player": "Pedro"
+    },
+    {
       "id": "e003",
       "minute": 18,
       "type": "goal",
@@ -5482,12 +5522,36 @@
       "player": "Pedro"
     },
     {
+      "id": "e3",
+      "minute": 20,
+      "type": "yellow_card",
+      "description": "Cartão amarelo para Rodrigo Caio por falta dura.",
+      "team": "Flamengo",
+      "player": "Rodrigo Caio"
+    },
+    {
+      "id": "4",
+      "minute": 29,
+      "type": "substitution",
+      "description": "Sai Gerson, entra Allan",
+      "team": "Flamengo",
+      "player": "Allan"
+    },
+    {
       "id": "e004",
       "minute": 33,
       "type": "substitution",
       "description": "Sai Bruno Henrique, entra Everton Cebolinha",
       "team": "Flamengo",
       "player": "Everton Cebolinha"
+    },
+    {
+      "id": "e4",
+      "minute": 34,
+      "type": "goal",
+      "description": "Gol do Juventude! Vitor Gabriel empata o jogo.",
+      "team": "Juventude",
+      "player": "Vitor Gabriel"
     },
     {
       "id": "e005",
@@ -5506,69 +5570,12 @@
       "player": "Vitor Mendes"
     },
     {
-      "id": "e007",
-      "minute": 47,
+      "id": "5",
+      "minute": 45,
       "type": "half_time",
       "description": "Fim do primeiro tempo",
       "team": "",
       "player": ""
-    },
-    {
-      "id": "e008",
-      "minute": 64,
-      "type": "goal",
-      "description": "Gol de Vitor Gabriel após cobrança de escanteio",
-      "team": "Juventude",
-      "player": "Vitor Gabriel"
-    },
-    {
-      "id": "e009",
-      "minute": 78,
-      "type": "substitution",
-      "description": "Sai Gerson, entra Victor Hugo",
-      "team": "Flamengo",
-      "player": "Victor Hugo"
-    },
-    {
-      "id": "e010",
-      "minute": 90,
-      "type": "end",
-      "description": "Fim da partida",
-      "team": "",
-      "player": ""
-    },
-
-    {
-      "id": "e1",
-      "minute": 5,
-      "type": "kickoff",
-      "description": "Começa o jogo no Maracanã!",
-      "team": "",
-      "player": ""
-    },
-    {
-      "id": "e2",
-      "minute": 12,
-      "type": "goal",
-      "description": "Gol do Flamengo! Bruno Henrique abre o placar.",
-      "team": "Flamengo",
-      "player": "Bruno Henrique"
-    },
-    {
-      "id": "e3",
-      "minute": 20,
-      "type": "yellow_card",
-      "description": "Cartão amarelo para Rodrigo Caio por falta dura.",
-      "team": "Flamengo",
-      "player": "Rodrigo Caio"
-    },
-    {
-      "id": "e4",
-      "minute": 34,
-      "type": "goal",
-      "description": "Gol do Juventude! Vitor Gabriel empata o jogo.",
-      "team": "Juventude",
-      "player": "Vitor Gabriel"
     },
     {
       "id": "e5",
@@ -5587,64 +5594,8 @@
       "player": "Arrascaeta"
     },
     {
-      "id": "e7",
-      "minute": 60,
-      "type": "red_card",
-      "description": "Cartão vermelho para Danilo Boza do Juventude!",
-      "team": "Juventude",
-      "player": "Danilo Boza"
-    },
-    {
-      "id": "e8",
-      "minute": 74,
-      "type": "goal",
-      "description": "Gol do Flamengo! Gabigol coloca o time na frente novamente.",
-      "team": "Flamengo",
-      "player": "Gabigol"
-    },
-    {
-      "id": "e9",
-      "minute": 90,
-      "type": "fulltime",
-      "description": "Fim de jogo! Flamengo vence por 2 a 1.",
-      "team": "",
-      "player": ""
-    },
-    {
-      "id": "1",
-      "minute": 3,
-      "type": "foul",
-      "description": "Falta cometida por Everton Ribeiro",
-      "team": "Flamengo",
-      "player": "Everton Ribeiro"
-    },
-    {
-      "id": "2",
-      "minute": 9,
-      "type": "yellow_card",
-      "description": "Cartão amarelo para Zé Ivaldo",
-      "team": "Juventude",
-      "player": "Zé Ivaldo"
-    },
-    {
-      "id": "3",
-      "minute": 14,
-      "type": "goal",
-      "description": "Gol de Pedro após cruzamento",
-      "team": "Flamengo",
-      "player": "Pedro"
-    },
-    {
-      "id": "4",
-      "minute": 29,
-      "type": "substitution",
-      "description": "Sai Gerson, entra Allan",
-      "team": "Flamengo",
-      "player": "Allan"
-    },
-    {
-      "id": "5",
-      "minute": 45,
+      "id": "e007",
+      "minute": 47,
       "type": "half_time",
       "description": "Fim do primeiro tempo",
       "team": "",
@@ -5659,12 +5610,28 @@
       "player": "Vitor Gabriel"
     },
     {
+      "id": "e7",
+      "minute": 60,
+      "type": "red_card",
+      "description": "Cartão vermelho para Danilo Boza do Juventude!",
+      "team": "Juventude",
+      "player": "Danilo Boza"
+    },
+    {
       "id": "7",
       "minute": 60,
       "type": "foul",
       "description": "Falta cometida por Filipe Luís",
       "team": "Flamengo",
       "player": "Filipe Luís"
+    },
+    {
+      "id": "e008",
+      "minute": 64,
+      "type": "goal",
+      "description": "Gol de Vitor Gabriel após cobrança de escanteio",
+      "team": "Juventude",
+      "player": "Vitor Gabriel"
     },
     {
       "id": "8",
@@ -5675,12 +5642,44 @@
       "player": "Vitor Mendes"
     },
     {
+      "id": "e8",
+      "minute": 74,
+      "type": "goal",
+      "description": "Gol do Flamengo! Gabigol coloca o time na frente novamente.",
+      "team": "Flamengo",
+      "player": "Gabigol"
+    },
+    {
       "id": "9",
       "minute": 75,
       "type": "substitution",
       "description": "Sai Arrascaeta, entra Victor Hugo",
       "team": "Flamengo",
       "player": "Victor Hugo"
+    },
+    {
+      "id": "e009",
+      "minute": 78,
+      "type": "substitution",
+      "description": "Sai Gerson, entra Victor Hugo",
+      "team": "Flamengo",
+      "player": "Victor Hugo"
+    },
+    {
+      "id": "e9",
+      "minute": 90,
+      "type": "fulltime",
+      "description": "Fim de jogo! Flamengo vence por 2 a 1.",
+      "team": "",
+      "player": ""
+    },
+    {
+      "id": "e010",
+      "minute": 90,
+      "type": "end",
+      "description": "Fim da partida",
+      "team": "",
+      "player": ""
     },
     {
       "id": "10",

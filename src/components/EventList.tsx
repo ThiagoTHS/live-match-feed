@@ -15,7 +15,7 @@ type Props = {
 
 const typeConfig: Record<
   string,
-  { label: string; icon: JSX.Element; color: string }
+  { label: string; icon: React.ReactNode; color: string }
 > = {
   goal: {
     label: "Gol",

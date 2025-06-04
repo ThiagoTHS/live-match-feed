@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 
 type Props = {
@@ -8,77 +8,71 @@ type Props = {
 };
 
 export default function GameClock({ onTimeUpdate }: Props) {
-  const [seconds, setSeconds] = useState(0);
+  const [seconds, setSeconds] = useState<number | null>(null);
   const [isRunning, setIsRunning] = useState(true);
-  const [speed, setSpeed] = useState(1); // velocidade de avanço
+  const [speed, setSpeed] = useState(1);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const GAME_DURATION_MINUTES = 90;
   const GAME_DURATION_SECONDS = GAME_DURATION_MINUTES * 60;
 
-  // Carregar tempo salvo ao iniciar
+  // Carrega do localStorage ao montar
   useEffect(() => {
-    const savedSeconds = localStorage.getItem("gameClockSeconds");
-    if (savedSeconds) {
-      const parsed = parseInt(savedSeconds, 10);
-      if (!isNaN(parsed)) {
-        setSeconds(parsed);
-        onTimeUpdate(Math.floor(parsed / 60));
-        if (parsed >= GAME_DURATION_SECONDS) setIsRunning(false);
-      }
-    }
-  }, [onTimeUpdate]);
+    const saved = localStorage.getItem("gameClockSeconds");
+    const parsed = saved ? parseInt(saved, 10) : 0;
+    setSeconds(isNaN(parsed) ? 0 : parsed);
+  }, []);
 
-  // Salvar tempo no localStorage sempre que mudar
+  // Sempre que seconds mudar, atualizar localStorage e callback
   useEffect(() => {
+    if (seconds === null) return;
     localStorage.setItem("gameClockSeconds", seconds.toString());
-  }, [seconds]);
+    onTimeUpdate(Math.floor(seconds / 60));
+  }, [seconds, onTimeUpdate]);
 
-  // Atualização automática do relógio
+  // Relógio automático
   useEffect(() => {
-    if (isRunning) {
-      intervalRef.current = setInterval(() => {
-        setSeconds((prev) => {
-          const next = prev + speed;
-          const limited = Math.min(next, GAME_DURATION_SECONDS);
+    if (!isRunning || seconds === null) return;
 
-          if (limited >= GAME_DURATION_SECONDS) {
-            setIsRunning(false);
-          }
-
-          // Dispara atualização após atualização do estado
-          setTimeout(() => {
-            onTimeUpdate(Math.floor(limited / 60));
-          }, 0);
-
-          return limited;
-        });
-      }, 1000);
-    }
+    intervalRef.current = setInterval(() => {
+      setSeconds((prev) => {
+        if (prev === null) return 0;
+        const next = Math.min(prev + speed, GAME_DURATION_SECONDS);
+        if (next >= GAME_DURATION_SECONDS) setIsRunning(false);
+        return next;
+      });
+    }, 1000);
 
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, [isRunning, speed, onTimeUpdate]);
+  }, [isRunning, speed, seconds]);
 
   const toggleRunning = () => setIsRunning(!isRunning);
 
   const resetClock = () => {
     setSeconds(0);
-    onTimeUpdate(0);
     setIsRunning(false);
     localStorage.removeItem("gameClockSeconds");
   };
 
   const advanceClock = (value: number) => {
-    const next = seconds + value;
-    const limited = Math.min(next, GAME_DURATION_SECONDS);
-    setSeconds(limited);
-    onTimeUpdate(Math.floor(limited / 60));
+    if (seconds !== null) {
+      const next = Math.min(seconds + value, GAME_DURATION_SECONDS);
+      setSeconds(next);
+    }
   };
 
-  const minutes = Math.floor(seconds / 60);
-  const secs = seconds % 60;
+  const minutes = seconds !== null ? Math.floor(seconds / 60) : 0;
+  const secs = seconds !== null ? seconds % 60 : 0;
+
+  if (seconds === null) {
+    return (
+      <div className="text-center py-4 font-semibold text-gray-500 dark:text-gray-300">
+        Carregando relógio...
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-wrap items-center gap-4 mb-6 p-4 border rounded-lg bg-white dark:bg-zinc-900 shadow transition-all">

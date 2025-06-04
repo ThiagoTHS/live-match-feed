@@ -7,12 +7,12 @@ type Props = {
 };
 
 export default function NarratorComments({ currentTime }: Props) {
-  const visibleComments = narratorComments.filter(
-    (c) => c.minute <= currentTime
-  );
+  const visibleComments = narratorComments
+    .filter((c) => c.minute <= currentTime)
+    .sort((a, b) => b.minute - a.minute); // Ordena do mais recente para o mais antigo
 
   return (
-    <section className="mt-8">
+    <section>
       <h3 className="text-xl font-bold mb-2">Comentários do Narrador</h3>
       <div className="space-y-3">
         {visibleComments.map((comment) => (

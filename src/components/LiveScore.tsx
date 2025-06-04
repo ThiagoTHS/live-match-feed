@@ -6,6 +6,7 @@ type Props = {
   slug: string;
   time: string;
   stadium: string;
+  currentMinute: number; // novo prop
 };
 
 function formatDate(slugDate: string): string {
@@ -35,6 +36,7 @@ export default function LiveScore({
   slug,
   time,
   stadium,
+  currentMinute,
 }: Props) {
   const [championship, date] = (() => {
     const parts = slug.split("-");
@@ -44,8 +46,19 @@ export default function LiveScore({
     return [champ, gameDate, teamNames];
   })();
 
+  const matchStatus =
+    currentMinute >= 90
+      ? "Partida Encerrada"
+      : currentMinute >= 46
+      ? "2º Tempo"
+      : "1º Tempo";
+
   return (
     <div className="mb-6 text-center">
+      <div className="text-sm font-semibold mb-1 text-verde-grama dark:text-lime-300 animate-pulse">
+        {matchStatus}
+      </div>
+
       <div className="flex items-center justify-center gap-6 mb-2 text-xl font-bold">
         <div className="flex flex-col items-center">
           <img src={teamA.logo} alt={teamA.name} className="w-10 h-10" />
@@ -62,7 +75,7 @@ export default function LiveScore({
 
       <div className="text-sm text-gray-600 dark:text-gray-300">
         {championship}
-        <br />
+        <br className="relative sm:hidden" />
         {date} – {time} – {stadium}
       </div>
     </div>

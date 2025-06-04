@@ -1,3 +1,4 @@
+"use client";
 import { MatchEvent } from "@/data/match-events";
 import {
   Goal,
@@ -55,9 +56,12 @@ const typeConfig: Record<
 };
 
 export default function EventList({ events }: Props) {
+  // Ordena os eventos do mais recente para o mais antigo
+  const sortedEvents = [...events].sort((a, b) => b.minute - a.minute);
+
   return (
     <div className="space-y-4">
-      {events.map((event) => {
+      {sortedEvents.map((event) => {
         const config = typeConfig[event.type] ?? {
           label: event.type,
           icon: <Clock size={20} />,
